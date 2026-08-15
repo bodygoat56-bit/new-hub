@@ -61,7 +61,7 @@ export function TeamSection() {
                 <p className="text-slate-400">No team members yet. Click "Add Member" to get started.</p>
               </div>
             ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              <div className="flex flex-col gap-5">
                 {members.map((member) => (
                   <MemberCard
                     key={member.id}

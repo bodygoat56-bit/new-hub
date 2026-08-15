@@ -11,7 +11,14 @@ export const supabase = createClient(url, anonKey, {
   },
 })
 
-export const ADMIN_EMAIL = 'abdobody19102006@gmail.com'
+export const ADMIN_EMAILS = [
+  'abdobody19102006@gmail.com',
+  'Ali.Ahmad07@eng-st.cu.edu.eg',
+  'Aboodhamdy33@gmail.com',
+  'mohammed.1352006@gmail.com',
+  'abdallahrafat73@gmail.com',
+  'mohamednageh0100@gmail.com',
+]
 export const HUB_FILES_BUCKET = 'hub-files'
 
 export interface HubFile {
@@ -26,5 +33,5 @@ export interface HubFile {
 }
 
 export function isAdminEmail(email: string | undefined | null): boolean {
-  return !!email && email.toLowerCase() === ADMIN_EMAIL
+  return !!email && ADMIN_EMAILS.includes(email.toLowerCase())
 }

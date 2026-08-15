@@ -51,7 +51,7 @@ export function AuthModal({ onClose }: { onClose: () => void }) {
           <div className="mb-4 flex items-start gap-2 p-3 rounded-lg bg-cyan-500/5 border border-cyan-500/20">
             <ShieldCheck size={16} className="text-cyan-400 flex-shrink-0 mt-0.5" />
             <p className="text-xs text-slate-400 leading-relaxed">
-              Only the admin account can upload, replace, or delete the Guide and Demo files.
+              Admin accounts can upload, replace, or delete the Guide and Demo files.
               Visitors can always view them.
             </p>
           </div>
